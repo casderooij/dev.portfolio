@@ -4,4 +4,4 @@
 
 <Meta title="dev.casderooij" description="Website" />
 
-<div class="text-green-400">Home page</div>
+<div>Home page</div>

@@ -1,11 +1,11 @@
 import path from 'path';
 import adapterStatic from '@sveltejs/adapter-static';
 import sveltePreprocess from 'svelte-preprocess';
-import { windi } from 'svelte-windicss-preprocess';
+import WindiCSS from 'vite-plugin-windicss';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	preprocess: [windi({ configPath: './windi.config.js' }), sveltePreprocess()],
+	preprocess: sveltePreprocess(),
 
 	kit: {
 		adapter: adapterStatic({
@@ -22,7 +22,7 @@ const config = {
 					$styles: path.resolve('./src/styles')
 				}
 			},
-			plugins: []
+			plugins: [WindiCSS()]
 		}
 	}
 };

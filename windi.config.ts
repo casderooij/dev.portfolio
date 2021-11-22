@@ -5,6 +5,10 @@ export default defineConfig({
 		extend: {
 			fontFamily: {
 				sans: ['Inter', 'sans-serif']
+			},
+			colors: {
+				body: '#c4c4c4',
+				dark: '#2c2c2c'
 			}
 		}
 	},

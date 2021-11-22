@@ -1,10 +1,21 @@
 <script lang="ts">
+	import 'virtual:windi.css';
 	import '$styles/app.css';
+	import Header from '$components/Header.svelte';
 	import Footer from '$components/Footer.svelte';
 </script>
 
-<slot />
+<Header />
+<main class="flex-1">
+	<slot />
+</main>
 <Footer />
 
-<style windi:preflights:global windi:safelist:global>
+<style>
+	:global(body) {
+		@apply bg-body text-dark;
+	}
+	:global(#svelte) {
+		@apply flex flex-col h-screen p-2;
+	}
 </style>
