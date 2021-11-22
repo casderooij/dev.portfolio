@@ -3,4 +3,5 @@
 </script>
 
 <Meta title="dev.casderooij" description="Website" />
-Home page
+
+<div class="text-green-400">Home page</div>
