@@ -8,7 +8,11 @@ const config = {
 	preprocess: [windi({ configPath: './windi.config.js' }), sveltePreprocess()],
 
 	kit: {
-		adapter: adapterStatic(),
+		adapter: adapterStatic({
+			pages: 'build',
+			assets: 'build',
+			fallback: null
+		}),
 		target: '#svelte',
 		vite: {
 			resolve: {
