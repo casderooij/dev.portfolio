@@ -1,8 +1,6 @@
-const links = [
+export default [
 	{
 		name: 'Github',
 		url: 'https://www.github.com/casderooij'
 	}
 ];
-
-export default links;
