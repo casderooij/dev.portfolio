@@ -14,7 +14,8 @@ const config = {
 		vite: {
 			resolve: {
 				alias: {
-					$data: path.resolve('./src/data')
+					$data: path.resolve('./src/data'),
+					$components: path.resolve('./src/components')
 				}
 			},
 			plugins: []
