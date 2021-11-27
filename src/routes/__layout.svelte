@@ -1,5 +1,4 @@
-<script lang="ts">
-	import 'virtual:windi.css';
+<script>
 	import '$styles/app.css';
 	import Header from '$components/Header.svelte';
 	import Footer from '$components/Footer.svelte';
@@ -12,10 +11,4 @@
 <Footer />
 
 <style>
-	:global(body) {
-		@apply bg-body text-dark;
-	}
-	:global(#svelte) {
-		@apply flex flex-col h-screen p-2;
-	}
 </style>

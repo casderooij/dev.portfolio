@@ -1,7 +1,6 @@
 import path from 'path';
 import adapterStatic from '@sveltejs/adapter-static';
 import sveltePreprocess from 'svelte-preprocess';
-import WindiCSS from 'vite-plugin-windicss';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -18,11 +17,10 @@ const config = {
 			resolve: {
 				alias: {
 					$data: path.resolve('./src/data'),
-					$components: path.resolve('./src/components'),
+					$components: path.resolve('./src/lib/components'),
 					$styles: path.resolve('./src/styles')
 				}
-			},
-			plugins: [WindiCSS()]
+			}
 		}
 	}
 };

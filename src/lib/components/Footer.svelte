@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import links from '$data/links';
 </script>
 
