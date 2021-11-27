@@ -1,0 +1,22 @@
+body {
+  line-height: 1.4;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0.5rem 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--color-link);
+}

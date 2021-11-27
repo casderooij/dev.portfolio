@@ -5,10 +5,19 @@
 </script>
 
 <Header />
-<main class="flex-1">
+<main>
 	<slot />
 </main>
 <Footer />
 
 <style>
+	:global(#svelte) {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	main {
+		flex: 1;
+	}
 </style>

@@ -1,3 +1,3 @@
 <header>
-	<h1 class="">web development</h1>
+  <h1>web development</h1>
 </header>
